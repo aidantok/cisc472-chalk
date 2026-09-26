@@ -25,5 +25,5 @@ COPY --from=builder /app/lib ./lib
 COPY --from=builder /app/data ./data
 
 USER node
-EXPOSE 3000
+EXPOSE 8080
 CMD ["node", "server.js"]
